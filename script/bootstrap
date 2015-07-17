@@ -136,12 +136,24 @@ install_dotfiles () {
     link_file "$src" "$dst"
   done
 
+  # folders we want . linked into our home
   for dotdir in oh-my-zsh antigen nvm
   do
     src="${DOTFILES_ROOT}/${dotdir}"
     dst="$HOME/.$(basename "${src}")"
     link_file "$src" "$dst"
   done
+
+  # virtualenv setup zsh for now
+  if [[ "${WORKON_HOME}xxx" != "xxx" && -d "${WORKON_HOME}" && "$(basename ${WORKON_HOME})" == ".virtualenvs" ]]; then
+    for src in $(find -H "${DOTFILES_ROOT}/virtualenv" -maxdepth 2 -name '*.symlink-zsh')
+    do
+      dst="${WORKON_HOME}/$(basename "${src%.*}")"
+      echo "src : $src"
+      echo "dst : $dst"
+      link_file "$src" "$dst"
+    done
+  fi
 }
 
 setup_gitconfig
