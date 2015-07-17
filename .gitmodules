@@ -1,9 +1,9 @@
 [submodule "oh-my-zsh"]
-	path = oh-my-zsh
+	path = oh-my-zsh.symlink
 	url = git://github.com/robbyrussell/oh-my-zsh.git
 [submodule "antigen"]
-	path = antigen
+	path = antigen.symlink
 	url = https://github.com/zsh-users/antigen
 [submodule "nvm"]
-	path = nvm
+	path = nvm.symlink
 	url = https://github.com/creationix/nvm.git

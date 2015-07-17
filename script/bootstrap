@@ -137,12 +137,12 @@ install_dotfiles () {
   done
 
   # folders we want . linked into our home
-  for dotdir in oh-my-zsh antigen nvm
-  do
-    src="${DOTFILES_ROOT}/${dotdir}"
-    dst="$HOME/.$(basename "${src}")"
-    link_file "$src" "$dst"
-  done
+  #for dotdir in oh-my-zsh antigen nvm
+  #do
+  #  src="${DOTFILES_ROOT}/${dotdir}"
+  #  dst="$HOME/.$(basename "${src}")"
+  #  link_file "$src" "$dst"
+  #done
 
   # virtualenv setup zsh for now
   if [[ "${WORKON_HOME}xxx" != "xxx" && -d "${WORKON_HOME}" && "$(basename ${WORKON_HOME})" == ".virtualenvs" ]]; then
