@@ -1,3 +1,6 @@
 [submodule "antigen.symlink"]
 	path = antigen.symlink
 	url = https://github.com/zsh-users/antigen
+[submodule "oh-my-zsh.symlink"]
+	path = oh-my-zsh.symlink
+	url = git://github.com/robbyrussell/oh-my-zsh.git
