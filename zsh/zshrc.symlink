@@ -12,40 +12,40 @@ then
   source ~/.localrc
 fi
 
-source "${HOME}/.antigen/antigen.zsh"
+#source "${HOME}/.antigen/antigen.zsh"
 
-antigen use oh-my-zsh
+#antigen use oh-my-zsh
 
-antigen bundle git
-antigen bundle pip
-antigen bundle rsync
-antigen bundle python
-antigen bundle virtualenvwrapper
-antigen bundle node
-antigen bundle npm
-antigen bundle nvm
-#antigen bundle rake
-#antigen bundle rvm
-antigen bundle bundler
-antigen bundle zsh-users/zsh-completions src
-antigen bundle zsh-users/zsh-syntax-highlighting
-antigen bundle kennethreitz/autoenv
-antigen bundle command-not-found
-antigen bundle history
-antigen bundle tmux
-antigen bundle vundle
-antigen bundle sprunge
-antigen bundle fabric
-antigen bundle ssh-agent
-antigen bundle nvm
+#antigen bundle git
+#antigen bundle pip
+#antigen bundle rsync
+#antigen bundle python
+#antigen bundle virtualenvwrapper
+#antigen bundle node
+#antigen bundle npm
+#antigen bundle nvm
+##antigen bundle rake
+##antigen bundle rvm
+#antigen bundle bundler
+#antigen bundle zsh-users/zsh-completions src
+#antigen bundle zsh-users/zsh-syntax-highlighting
+#antigen bundle kennethreitz/autoenv
+#antigen bundle command-not-found
+#antigen bundle history
+#antigen bundle tmux
+#antigen bundle vundle
+#antigen bundle sprunge
+#antigen bundle fabric
+#antigen bundle ssh-agent
+#antigen bundle nvm
 
-antigen-theme jreese
-antigen-apply
+#antigen-theme jreese
+#antigen-apply
 
 # This might move into a system specific .localrc file!
-zstyle :omz:plugins:ssh-agent identities id_rsa id_rsa_deploy_key
+#zstyle :omz:plugins:ssh-agent identities id_rsa id_rsa_deploy_key
 
-source /usr/local/bin/virtualenvwrapper.sh
+#source /usr/local/bin/virtualenvwrapper.sh
 
 # all of our zsh files
 typeset -U config_files
