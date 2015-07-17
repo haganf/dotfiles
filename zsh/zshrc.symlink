@@ -42,6 +42,9 @@ antigen bundle nvm
 antigen-theme jreese
 antigen-apply
 
+# This might move into a system specific .localrc file!
+zstyle :omz:plugins:ssh-agent identities id_rsa id_rsa_deploy_key
+
 source /usr/local/bin/virtualenvwrapper.sh
 
 # all of our zsh files
