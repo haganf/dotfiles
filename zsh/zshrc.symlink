@@ -12,6 +12,8 @@ then
   source ~/.localrc
 fi
 
+source "${HOME}/.nvm/nvm.sh"
+
 source "${HOME}/.antigen/antigen.zsh"
 
 antigen use oh-my-zsh
@@ -41,6 +43,7 @@ antigen bundle ssh-agent
 antigen-theme jreese
 antigen-apply
 
+source /usr/local/bin/virtualenvwrapper.sh
 
 # all of our zsh files
 #typeset -U config_files
