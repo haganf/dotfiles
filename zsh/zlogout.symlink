@@ -1,0 +1,3 @@
+echo "Exiting..."
+ssh-add -D
+ssh-agent -k
